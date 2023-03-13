@@ -39,6 +39,14 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 ]
 
+AVAILABLE_APPS = [
+    'rest_framework',
+    "drf_yasg2",
+    'farms',
+]
+
+INSTALLED_APPS.extend(AVAILABLE_APPS)
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
